@@ -63,7 +63,7 @@ ATCMS enforces a strict, scientifically-backed 6-step learning sequence to ensur
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/your-repo/atcms.git
+    git clone https://github.com/beingmushfiq/atcms.git
     cd atcms
     ```
 
