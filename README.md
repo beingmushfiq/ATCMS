@@ -39,7 +39,7 @@ SIBA enforces a strict, scientifically-backed 6-step propulsion sequence to ensu
 3.  **Practical**: Mission-critical execution with real-world scenarios.
 4.  **Evaluation**: Rigorous AI-verified testing of skills.
 5.  **Certification**: Issuance of verifiable, expert-grade credentials.
-6.  **Business**: Launching and scaling the skills into a functional Business OS.
+6.  **Business**: Launching and scaling the skills into a functional Business Operation.
 
 ---
 

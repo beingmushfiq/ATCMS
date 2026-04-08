@@ -44,7 +44,7 @@ The system MUST enforce this sequence for every course:
 3.  **Practical**: Real-world execution tasks.
 4.  **Evaluation**: Skill assessment (AI-graded).
 5.  **Certification**: Verified credential issuance.
-6.  **Business**: KPI-driven scaling phase.
+6.  **Business**: Launching and scaling the skills into a functional Business Operation.
 
 ### 3. Database Schema Requirements (MySQL)
 - `users`: Standard fields + `role`.

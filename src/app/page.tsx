@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
 import { formatCurrency } from "@/lib/utils";
 import {
-  GraduationCap,
   ArrowRight,
   BookOpen,
   Users,
@@ -195,9 +194,9 @@ export default async function HomePage() {
             </p>
 
             {/* Box 2: Purpose & Tagline */}
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[0.95] tracking-tight mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[0.95] tracking-tight mb-8">
               <span className="text-[var(--text-primary)]">Modernizing</span><br />
-              <span className="gradient-text">Business OS.</span>
+              <span className="gradient-text">Business Operation.</span>
             </h1>
 
             <p className="text-base md:text-lg text-[var(--text-secondary)] leading-relaxed mb-12 max-w-lg">
