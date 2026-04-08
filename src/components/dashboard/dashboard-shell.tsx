@@ -14,6 +14,8 @@ import {
   STUDENT_NAV,
   MENTOR_NAV,
 } from "@/constants";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Logo } from "@/components/ui/logo";
 import {
   GraduationCap,
   ChevronLeft,
@@ -107,14 +109,7 @@ export default function DashboardShell({ children, user }: DashboardLayoutProps)
       >
         {/* Logo */}
         <div className={cn("h-16 flex items-center border-b border-[var(--border-primary)] px-4", collapsed && "justify-center")}>
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--brand-500)] to-[var(--accent-500)] flex items-center justify-center shrink-0 overflow-hidden">
-              <Image src="/logos/logo_atcms.png" width={36} height={36} alt="ATCMS Logo" className="object-cover" />
-            </div>
-            {!collapsed && (
-              <span className="text-lg font-bold gradient-text">{APP_NAME}</span>
-            )}
-          </Link>
+          <Logo iconOnly={collapsed} className={cn(collapsed ? "scale-90" : "scale-90 origin-left")} />
           <button
             onClick={() => setMobileOpen(false)}
             className="ml-auto lg:hidden text-[var(--text-muted)] hover:text-[var(--text-primary)]"
@@ -205,6 +200,7 @@ export default function DashboardShell({ children, user }: DashboardLayoutProps)
           </div>
 
           <div className="flex items-center gap-3">
+            <ThemeToggle />
             {/* Notifications */}
             <div className="relative">
               <button 
@@ -226,7 +222,7 @@ export default function DashboardShell({ children, user }: DashboardLayoutProps)
                     {[
                       { title: "New Assignment Graded", desc: "Your orientation module was graded.", time: "2h ago", unread: true },
                       { title: "Live Session Reminder", desc: "Mentorship session starts in 1 hour.", time: "5h ago", unread: true },
-                      { title: "Welcome to ATCMS", desc: "Start exploring the platform today.", time: "1d ago", unread: false },
+                      { title: "Welcome to SIBA", desc: "Start exploring the platform today.", time: "1d ago", unread: false },
                     ].map((n, i) => (
                       <div key={i} className={cn("p-4 border-b border-[var(--border-secondary)] last:border-0 hover:bg-[var(--bg-tertiary)] transition-colors cursor-pointer", n.unread && "bg-[var(--brand-500)]/5")}>
                         <div className="flex gap-3">

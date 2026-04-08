@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
+import { Inter } from "next/font/google";
+
+import { ThemeProvider } from "@/components/theme-provider";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ATCMS — AI-Powered Training Center",
-  description: "Learn, execute, and scale real-world business skills with AI-powered guidance, expert mentorship, and structured certification.",
-  keywords: ["training", "LMS", "business skills", "AI learning", "certification"],
+  title: "SIBA — Sherazi IT Business Academy",
+  description: "Modernizing businesses through expert IT training and business development. Learn, execute, and scale with SIBA.",
+  keywords: ["SIBA", "Sherazi IT Business Academy", "business development", "IT training", "business growth", "modernization"],
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/logos/logo_atcms.png",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/logo.svg",
   },
 };
 
@@ -18,14 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-      </head>
-      <body>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

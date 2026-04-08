@@ -1,6 +1,6 @@
-export const APP_NAME = "ATCMS";
-export const APP_FULL_NAME = "AI-Powered Training Center";
-export const APP_DESCRIPTION = "Learn, Execute, and Scale real-world business skills with AI-powered guidance";
+export const APP_NAME = "SIBA";
+export const APP_FULL_NAME = "Sherazi IT Business Academy";
+export const APP_DESCRIPTION = "Modernizing businesses through elite IT training and strategic growth execution.";
 
 export const ROLES = {
   ADMIN: "ADMIN",

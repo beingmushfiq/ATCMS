@@ -7,14 +7,15 @@ import {
   BookOpen,
   Users,
   Layers,
-  GraduationCap,
   Search,
   ArrowRight,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { Logo } from "@/components/ui/logo";
 import { formatCurrency } from "@/lib/utils";
 
 export const metadata = {
-  title: "Course Catalog | ATCMS",
+  title: "Course Catalog | SIBA",
   description: "Browse our collection of expert-led courses",
 };
 
@@ -46,13 +47,9 @@ export default async function CourseCatalogPage() {
 
       {/* Navbar */}
       <nav className="fixed top-0 inset-x-0 z-50 h-16 flex items-center px-6 lg:px-12 glass">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--brand-500)] to-[var(--accent-500)] flex items-center justify-center">
-            <GraduationCap className="w-5 h-5 text-white" />
-          </div>
-          <span className="text-lg font-bold gradient-text">ATCMS</span>
-        </Link>
+        <Logo className="scale-90 origin-left" />
         <div className="ml-auto flex items-center gap-3">
+          <ThemeToggle />
           <Link href="/login">
             <Button variant="ghost" size="sm">Sign In</Button>
           </Link>
