@@ -63,8 +63,8 @@ SIBA enforces a strict, scientifically-backed 6-step propulsion sequence to ensu
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/beingmushfiq/atcms.git
-    cd atcms
+    git clone https://github.com/beingmushfiq/SIBA.git
+    cd SIBA
     ```
 
 2.  **Install dependencies**
